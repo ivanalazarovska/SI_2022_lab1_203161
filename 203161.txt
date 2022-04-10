@@ -1,0 +1,125 @@
+C:\Users\Ivana\Desktop\git>git clone https://github.com/ivanalazarovska/SI_2022_lab1_203161.git
+
+
+
+C:\Users\Ivana\Desktop\git>cd SI_2022_lab1_203161
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>copy con shopping_list.txt
+Seker
+Mleko
+Voda
+Cokolado
+Jabolki
+        1 file(s) copied.
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git add .
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -m "Add 5 items to the shopping list"
+[master 1c73464] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git add .
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -m "Add quantities to the items"
+[master 8877a81] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git branch branch1
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git branch branch2
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git push origin branch1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 666 bytes | 31.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/ivanalazarovska/SI_2022_lab1_203161/pull/new/branch1
+remote:
+To https://github.com/ivanalazarovska/SI_2022_lab1_203161.git
+ * [new branch]      branch1 -> branch1
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/ivanalazarovska/SI_2022_lab1_203161/pull/new/branch2
+remote:
+To https://github.com/ivanalazarovska/SI_2022_lab1_203161.git
+ * [new branch]      branch2 -> branch2
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git checkout branch1
+Switched to branch 'branch1'
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>shopping_list.txt
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -a -m "Change quantity of item #5"
+[branch1 4485a96] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>shopping_list.txt
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -a -m "Change quantity of item #2"
+[master cf907c6] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 115.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ivanalazarovska/SI_2022_lab1_203161.git
+   8877a81..4485a96  branch1 -> branch1
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git push origin branch2
+Everything up-to-date
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 174.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ivanalazarovska/SI_2022_lab1_203161.git
+   6c7a1b1..cf907c6  master -> master
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git checkout branch2
+Switched to branch 'branch2'
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>shopping_list.txt
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -a -m "Modify item #4"
+[branch2 edc5d70] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>shopping list.txt
+'shopping' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>shopping_list.txt
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit --amend -m "Modify item #4 and add item #6"
+[branch2 bb91f04] Modify item #4 and add item #6
+ Date: Sun Apr 10 11:19:58 2022 +0200
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Tuka se javuva konflink i go resavam taka sto ja zadrzuvam promenata koja e na masterot 
+i posle se pravi 
+C:\Users\Ivana\Desktop\git\SI_2022_lab1_203161>git commit -a -m "Solving merge commit"
